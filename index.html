@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+  <title>WICAR.org | Malicious Website for Testing Internet Filters, Anti-malware, Proxies etc.</title>
+  <link rel="icon" href="./favicon.ico" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="./main.css" type="text/css" />
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5568574-11']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+</head><body>
+
+<div id="content">
+<div id="top_nav">
+<ul>
+  <li class="active">Home</li>
+  <li><a title="About" href="./about/">About</a></li>
+  <li><a title="Test your browser using actual exploits" href="http://malware.wicar.org">Test your browser using actual exploits!</a></li>
+  <li><a title="Anti-malware Results" href="./results">Anti-malware Results</a></li>
+  <li><a title="Contact" href="./contact/">Contact</a></li>
+  <li><a title="Resources" href="../resources">Resources</a></li>
+</ul>
+</div>
+<div id="page_body">
+<h2>WICAR.org<br />
+</h2>
+<p><span style="font-weight: bold;">&nbsp;&nbsp;&nbsp; Test Your Anti-Malware Solution!</span></p>
+<h3>Introduction</h3>
+
+<p>The <a href="http://wicar.org" alt="wicar.org">wicar.org</a> website was designed to test the correct operation your anti-virus / anti-malware software.</p>
+
+<p>The name &quot;<i>WICAR</i>&quot; is derived from the industry standard <a href="http://www.eicar.org" alt="EICAR" target="_blank">EICAR anti-virus test file</a>, which is a non-dangerous file that all anti-virus products flag as a real virus and quaratine or act upon as such. By being able to execute a test virus program safely, the end user or network administrator can ensure that the anti-virus software is correctly operating (without utilising a real virus which may damage the system should the anti-virus software fail to function).</p>
+
+<h3>How it works</h3>
+
+<p>When you visit a malicious website, a number of actions may occur:
+<ul>
+<li>A search result in Google may mark the result with the message "This website may harm your computer" and prevent you from visiting the address.</li>
+<li>The web browser, such as Internet Explorer, Firefox and Chrome, maintain their own list of known malware sites and will prevent or warn you from accessing the site.</li>
+<li>If you are protected by an inline website filtering appliance, application layer inspecting firewall or proxy server, such as those commonly deployed in corporate environments, the solution will block access to the website.</li>
+<li>If you have desktop based anti-virus / anti-malware software installed, they often include technology which will flag malicious URLs and block them.</li>
+<li>Finally, if you have none of the above, it is likely you are now infected with malware.</li>
+</ul>
+</p>
+
+<p style="text-align: center;"><img alt="Website contains malware warning" src="./malware.png" align="top" /><br />
+</p>
+
+<h3>Demonstration Video</h3>
+<p>Below is a demonstration video, using an unpatched Windows XP installation to exploit Internet Explorer using the known <a href="http://technet.microsoft.com/security/bulletin/ms03-020" target="_blank">MS03-020</a> vulnerability. In a corporate environment, a combination of firewalls, IDS/IPS, gateway proxies, inline web filters, anti-malware, desktop anti-virus and patch management implementations should prevent access to malicious URLs.</p>
+<p style="text-align: center;"><iframe width="853" height="480" src="http://www.youtube.com/embed/R1OOBz5q_SE" frameborder="0" allowfullscreen></iframe></p>
+
+<h3>Why?</h3>
+
+<p>There is not a standardised URL to test your anti-malware solution. Some browsers offer test malware pages, however they are not universal. Each anti-virus vendor has different detection mechanisms and independent lists of known malware sites. The <a href="http://wicar.org" alt="wicar.org">wicar.org</a> website contains actual browser exploits, therefore, regardless of search engine, web browser, filtering appliance or desktop anti-virus product you use, it should be marked as malicious.</p>
+
+<p>All malware is hosted at: <a href="http://malware.wicar.org"><code>http://malware.wicar.org/</code></a>, which is the correct address that should be blocked by anti-malware solutions (not this site).</p>
+
+<p>The browser exploits were generated using the <a href="http://www.metasploit.com" alt="Metasploit Framework" target="_blank">Metasploit Framework</a>, with a payload to execute the Windows Calculator (calc.exe). Exploits for other operating systems may be provided at a later date.
+
+<p>Oh, and we used the 'W' in WICAR for World-Wide Web ;-)</p>
+
+<p>If you have any questions regarding this website or the list of provided exploits, please <a href="./contact">contact us</a>.</p>
+</div>
+
+<div id="bottom_nav"> <a title="About Us" href="/about/">About Us</a> | <a title="Site Map" href="/sitemap">Site Map</a> </div>
+<div id="copyright">Copyright 2012, <a href="http://www.osisecurity.com.au/" target="_new">OSI Security</a> Pty Ltd. All rights reserved. <a href="https://github.com/wicar/wicar.github.io">github</a>.</div>
+</div>
+
+</body></html>
